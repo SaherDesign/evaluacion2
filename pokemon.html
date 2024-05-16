@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKEDEX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="icon" href="IMAGE/favicon.ico">
+</head>
+<body style="background-image: url('IMAGE/fondo.avif');">
+    <video autoplay muted loop id="bg-video">
+        <source src="VIDEO/POKEMONVIDEO.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+    <div class="container">
+        <div class="box">
+            <img src="IMAGE/PIKACHU.png" alt="Pikachu" class="pikachu">
+            <div class="text-box">
+                <img src="IMAGE/pokemon-logo.svg" alt="Logo" class="logo">
+                <h2>¿Mi pokemón favorito es?</h2>
+                <button id="pokeSearch">Buscar Pokémon</button>
+                <div id="pokeInfo"></div>
+            </div>
+            <div class="rotating-image-container">
+                <img src="IMAGE/POKEBOLAROT.png" alt="Rotating" class="rotating-image">
+            </div>
+        </div>
+    </div>
+    <script src="js/pokemon.js"></script>
+
+</body>
+</html>
